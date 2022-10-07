@@ -1,10 +1,12 @@
 html {
   scroll-behavior: smooth;
+  
 }
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 /*********************************** header ************************************/
 header {
@@ -87,7 +89,9 @@ padding-bottom: 10px;
 /********************************* GALLERY **************************************/
 .GALLERY{
     background-color: black;
-    border-top:2px solid white
+    border-top:2px solid white;
+    width: 100%;
+    
 }
 #descrip{
     text-align: center;
@@ -98,6 +102,13 @@ padding-bottom: 10px;
 #descrip h2{
     color: rgb(178, 50, 7);
     font-size: 30px;
+}
+#descrip h2::after{
+    content: "";
+border-bottom: 2px solid white;
+width: 12%;
+display: block;
+margin: 5px 620px;
 }
 #gallery{
     width: 80%;
@@ -125,6 +136,7 @@ padding-bottom: 10px;
     background-color: black;
     color: white;
     border-top: 2px solid white;
+    
 }
 #about1{
     text-align: center;
@@ -134,6 +146,13 @@ padding-bottom: 10px;
 #about1 h2{
     color:  rgb(178, 50, 7);
     font-size: 30px;
+}
+#about1 h2::after{
+    content: "";
+border-bottom: 2px solid white;
+width: 10%;
+display: block;
+margin: 5px 630px;
 }
 #about2{
     width: 100%;
@@ -178,6 +197,7 @@ padding-bottom: 10px;
     color: white;
     border-top: 2px solid white;
     font-family: sans-serif;
+   
 }
 #intro{
     text-align: center;
@@ -186,6 +206,13 @@ padding-bottom: 10px;
 #intro h2{
     color: rgb(178, 50, 7);
     font-size: 30px;
+}
+#intro h2::after{
+    content: "";
+border-bottom: 2px solid white;
+width: 8%;
+display: block;
+margin: 5px 650px;
 }
 #teams{
     width: 80%;
@@ -211,6 +238,7 @@ padding-bottom: 10px;
     padding-left: 10px;
 
 }
+
 #team button{
     padding: 10px 40px;
     margin-left: 20px;
@@ -222,4 +250,215 @@ padding-bottom: 10px;
 #team button:hover{
     background-color: white;
     color: rgb(178, 50, 7);
+}
+/****************************** PORTFOLIO ************************************/
+.PORTFOLIO{
+    width: 100%;
+    height: 220vh;
+    background-color: black;
+    border-top: 2px solid white;
+    
+}
+
+#Intro{
+    text-align: center;
+    color: white;
+    padding: 60px 5px;
+}
+#Intro h2{
+    color: rgb(178, 50, 7);
+    font-size: 30px;
+}
+#Intro h2::after{
+    content: "";
+border-bottom: 2px solid white;
+width: 15%;
+display: block;
+margin: 5px 590px;
+}
+
+#part1{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#part1 img{
+   width: 350px;
+   height: 300px;
+   transition: all 0.4s;
+   border: 2px solid rgb(178, 50, 7);
+   border-radius: 20%;
+    margin-bottom: 40px;
+}
+#part1 img:hover{
+   transform: translateY(10%);
+}
+#part2{
+    width: 100%;
+    height: 60vh;
+    color: white;
+    font-family: sans-serif;
+    /* display: flex; */
+}
+#part2 p{
+    margin-top: 620px;
+    margin-left: 800px;
+}
+#part2 button{
+margin-left: 30px;
+padding: 15px 30px;
+background-color: rgb(178, 50, 7);
+color: white;
+border-radius: 5px;
+}
+#part2 button:hover{
+background-color: white;
+color: rgb(178, 50, 7);
+}
+/* ..............................Review......................... */
+.Review{
+width: 100%;
+height: 100vh;
+background-color: black;
+border-top: 2px solid white;
+}
+#firstpart{
+
+    text-align: center;
+    color: white;
+    padding: 60px 5px;
+}
+#firstpart h2{
+    color: rgb(178, 50, 7);
+    font-size: 30px;
+}
+#firstpart h2::after{
+    content: "";
+border-bottom: 2px solid white;
+width: 15%;
+display: block;
+margin: 5px 590px;
+}
+#secondpart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#secondpart img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#secondpart .card{
+    width: 20%;
+    height: 60%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    color: rgb(178, 50, 7);
+    border-radius: 10px;
+    transform: scale(1);
+    transition: all 0.5s ease-in;
+}
+#secondpart .card:hover{
+    background-color:rgb(178, 50, 7) ;
+    color:white ;
+    transform: scale(1.3);
+}
+/* .............................blog................................. */
+.Blogs{
+    width: 100%;
+height: 110vh;
+background-color: black;
+border-top: 2px solid white;
+}
+#firstparti{
+  text-align: center;
+    color: white;
+    padding: 60px 5px;
+}
+#firstparti h2{
+    color: rgb(178, 50, 7);
+    font-size: 30px;
+}
+#firstparti h2::after{
+    content: "";
+border-bottom: 2px solid white;
+width: 15%;
+display: block;
+margin: 5px 590px;
+}
+#secondparti{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#secondparti img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    
+}
+
+#secondparti .card{
+  width: 60%;  
+color: black;
+background-color: rgb(178, 50, 7);
+margin: 10px;
+padding: 10px;
+border-radius: 10px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+transform: translateY(0);
+
+transition: all 0.5s ease-in;
+}
+#secondparti .card:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-10%);
+   
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    border-top: 2px solid white;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+footer .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    
+}
+footer .contact a{
+    color: rgb(178, 50, 7);
+    text-decoration: none;
+    font-size: 30px;
+}
+footer .contact a:hover{
+    color: white;
+    
+}
+footer .contact span{
+    font-size: 40px;
+    color: white;
 }
